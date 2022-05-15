@@ -134,16 +134,27 @@ console.log('----------');
 
 /* Iteración 5 */
 
-//Crea una función llamada rollDice() que reciba como parametro el numero de caras que queramos que tenga el dado que deberá silumar el codigo dentro de la función. Como hemos dicho, que la función use el parametro para simular una tirada de dado y retornar el resultado. Si no se te ocurre como hacer un numero aleatorio no te preocupes! busca información sobre la función de javascript Math.random();
-
 function rollDice(sidesNumber) {
     return Math.floor(Math.random() * (sidesNumber - 1) + 1);
 };
 
 console.log(rollDice(6));
 
+console.log('----------');
 
+/* Iteración 6 */
 
+const players = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
+
+function swap(array, index1, index2) {
+    console.log(array);
+    let player1 = array[index1];
+    array[index1] = array[index2];
+    array[index2] = player1;
+    return array;
+};
+
+console.log(swap(players, 2, 0));
 
 
 
